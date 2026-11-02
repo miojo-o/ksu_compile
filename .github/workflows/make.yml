@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [KsuNext]
+    branches: [KernelSU-Next]
 
 env:
   WORKSPACE: ${{ github.workspace }}
