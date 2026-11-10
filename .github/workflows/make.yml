@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [KernelSU-Next]
+    branches: [KSUN]
 
 env:
   WORKSPACE: ${{ github.workspace }}
@@ -223,21 +223,21 @@ jobs:
         
         cd anykernel3
         
-        zip -r9 ../ksunext-5.10.223-android13-2024-11-anykernel3.zip . -x "*.git*"
+        zip -r9 ../ksun-5.10.223-android13-2024-11-anykernel3.zip . -x "*.git*"
         
     - name: upload_anykernel3
       uses: actions/upload-artifact@v4
       with:
         name: ksunext-5.10.223-android13
-        path: ${{ github.workspace }}/ksunext-5.10.223-android13-2024-11-anykernel3.zip
+        path: ${{ github.workspace }}/ksun-5.10.223-android13-2024-11-anykernel3.zip
         compression-level: 9
 
     - name: create_release
       uses: softprops/action-gh-release@v2
       with:
-        files: ${{ github.workspace }}/ksunext-5.10.223-android13-2024-11-anykernel3.zip
+        files: ${{ github.workspace }}/ksun-5.10.223-android13-2024-11-anykernel3.zip
         tag_name: v${{ github.run_number }}
-        name: KsuNext Build ${{ github.run_number }}
+        name: KSUN Build ${{ github.run_number }}
         body: |
           ## KernelSU-Next + SuSFS 2.3.0 + BBG + BBRv3
       
