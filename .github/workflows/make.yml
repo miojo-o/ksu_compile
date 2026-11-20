@@ -65,7 +65,7 @@ jobs:
         
         cd ./susfs4ksu
 
-        git checkout 8f78245e75d7b1ef1e91aaef1c185c03f9746a37
+        git checkout 1bea9e8fb4a64920f068e5da43f9751dfe601199
         
         cp ./kernel_patches/50_add_susfs_in_gki-android13-5.10.patch ../common/
         cp -r ./kernel_patches/fs/* ../common/fs/
@@ -249,7 +249,7 @@ jobs:
         tag_name: v${{ github.run_number }}
         name: BakaSU Build ${{ github.run_number }}
         body: |
-          ## BakaSU + SuSFS 2.3.0 + BBG + BBRv3
+          ## BakaSU + SuSFS 2.4.0 + BBG + BBRv3
       
           - Kernel: 5.10.223 (android13-2024-11_r6)
           - ksu_driver: (sync-up) ${{ env.KSU_DRIVER }}
