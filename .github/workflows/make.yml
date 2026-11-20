@@ -65,7 +65,7 @@ jobs:
         
         cd ./susfs4ksu
 
-        git checkout 1bea9e8fb4a64920f068e5da43f9751dfe601199
+        git checkout ae19cafc490e4a28255d131e1b06d19aa47527a6
         
         cp ./kernel_patches/50_add_susfs_in_gki-android13-5.10.patch ../common/
         cp -r ./kernel_patches/fs/* ../common/fs/
