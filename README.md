@@ -1,4 +1,4 @@
-# BakaSU 5.10.223-android13-2024-11_r6
+# KernelSU 5.10.223-android13-2024-11_r6
 
 ## Tested Device
 
